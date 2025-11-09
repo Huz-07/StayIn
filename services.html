@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - STAY IN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #F8B400;
+            --tertiary-color: #5D5FEF;
+            --light-bg: #EAEFF2;
+            --dark-bg: #2C3E50;
+            --text-color: #34495E;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-link.active,
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        .page-container {
+            margin-top: 56px;
+            padding: 2rem 0;
+        }
+        .page {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">STAY IN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel.html">Travel Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-lg-3" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container page-container">
+        <div class="page">
+            <h2>Hotel Services & Amenities</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-egg-fried"></i></div>
+                        <h3>Fine Dining</h3>
+                        <p>Multi-cuisine restaurant with international and local delicacies, room service available 24/7.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-water"></i></div>
+                        <h3>Swimming Pool</h3>
+                        <p>Rooftop infinity pool with city views, poolside bar, and comfortable lounging areas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+                        <h3>Fitness Center</h3>
+                        <p>State-of-the-art gym with modern equipment, personal trainers, and wellness programs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-person-fill"></i></div>
+                        <h3>Spa & Wellness</h3>
+                        <p>Full-service spa offering massages, beauty treatments, and relaxation therapies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-car-front-fill"></i></div>
+                        <h3>Valet Parking</h3>
+                        <p>Secure parking facility with valet service, car wash, and vehicle maintenance support.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 p-4">
+                        <div class="service-icon"><i class="bi bi-wifi"></i></div>
+                        <h3>Free Wi-Fi</h3>
+                        <p>High-speed internet access throughout the hotel, business center, and meeting rooms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 STAY IN. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="contact.html" class="text-white text-decoration-none mx-2">Contact Us</a>
+                    <a href="terms.html" class="text-white text-decoration-none mx-2">Terms & Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
